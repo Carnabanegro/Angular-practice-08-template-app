@@ -1,0 +1,30 @@
+<h3>Get Usuarios</h3>
+<div class="row">
+    <div class="col">
+        <button type="button" (click)="getUsuarios()" class="btn btn-primary float-center">Get Usuarios</button>
+    </div>
+</div>
+
+<div class="row" *ngIf="usuarios.length !== 0">
+    <div class="col">
+
+        <table class="table table-striped-columns">
+            <thead>
+              <tr >
+                <th *ngFor="let label of columnas" scope="col">{{label}}</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let user of usuarios; let i = index">
+                <th scope="row">{{user.id}}</th>
+                <td>{{user.email}}</td>
+                <td>{{user.first_name}}</td>
+                <td>{{user.last_name}}</td>
+                <td><img [src]="user.avatar" width="30px" height="30px" /></td>
+              </tr>
+            </tbody>
+          </table>
+
+
+    </div>
+</div>

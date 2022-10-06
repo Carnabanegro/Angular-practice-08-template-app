@@ -9,6 +9,9 @@ import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from '../app-routing.module';
 import { FormsModule } from '@angular/forms';
 import { ComponentsModule } from '../shared/components/components.module';
+import { AccountSettingsComponent } from './account-settings/account-settings.component';
+import { PromisesComponent } from './promises/promises.component';
+import { RxjsComponent } from './rxjs/rxjs.component';
 
 
 
@@ -18,13 +21,20 @@ import { ComponentsModule } from '../shared/components/components.module';
     DashboardComponent,
     ProgressComponent,
     Grafica1Component,
-    PagesComponent
+    PagesComponent,
+    AccountSettingsComponent,
+    PromisesComponent,
+    RxjsComponent
   ],
   exports: [
     DashboardComponent,
     ProgressComponent,
     Grafica1Component,
-    PagesComponent
+    PagesComponent,
+    AccountSettingsComponent,
+    PromisesComponent,
+    RxjsComponent
+
   ],
   imports: [
     CommonModule,
